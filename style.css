@@ -14,7 +14,7 @@ main{
 .container {
     width: 100vw;
     height: 100vh;
-    background: #fa97cd;
+    background-image: linear-gradient(to top, #fa97cd, rgb(248, 129, 188),rgb(252, 110, 188));
     display: flex;
     flex-direction: row;
     justify-content: center;
