@@ -19,6 +19,8 @@ section{
     color: rgb(133, 1, 56);
     font-size: 1.2em;
     margin: auto;
+    box-shadow: 2px 2px 4px 2px rgba(168, 4, 86, 0.493);
+    
     
     
 }
