@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            font: normal 15pt American Typewriter, serif;
+            
+        }
+        input {
+            background-color: beige;
+            font: normal 15pt Arial;
+            border-color: rgb(231, 217, 178);
+            border-width: 2px;
+            border-radius: 20px;
+            font: italic 25px American Typewriter, serif;
+            
+        }
+        h1 {
+            font: italic 50pt American Typewriter, serif;
+            text-align: center;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Países</h1>
+    País: <input type="text" name="txtn1" id="txtn1">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+
+
+    </div>
+    <div id="lil">
+
+
+    </div>
+    <div id="lel">
+
+
+    </div>
+    <script>
+        function verificar() {
+            
+            var P1 = document.getElementById(('txtn1'))
+            var res = window.document.querySelector('div#res')
+            var lil = document.getElementById('lil')
+            var lel = document.getElementById('lel')
+            if(P1.value == 'brasil') {
+                lil.innerHTML += '<p> Você é <strong>brasileire</strong>.</p>'
+            } else {
+                lel.innerHTML += '<p>Você é <strong>estrangeire</strong>.</p>'
+            }
+            
+            
+            res.innerHTML = '<p>Bem vinde!</p>'
+        }
+    </script>
+</body>
+</html>
+
+    

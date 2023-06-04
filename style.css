@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@import "{{ site.theme }}";
+
+body{
+    margin: 0px;
+    width: 90vw;
+    
+}
+main{
+   margin: auto;
+   font-family: 'Times New Roman', Times, serif;
+    
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #fa97cd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #7a0043;
+    
+}
+.box {
+    width: 230px;
+    height: 230px;
+    
+    
+    
+}
+
+
+  
+input{
+    background-color: rgb(247, 133, 190);
+    color: rgb(121, 10, 56);
+    border-color: rgb(204, 36, 106);
+    box-shadow: 2PX 2PX 6PX 1PX rgba(194, 30, 131, 0.425);
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+
+#no:hover{
+    display: none;
+    
+    
+    
+}

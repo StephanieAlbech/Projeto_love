@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body {
+            background-color: rgb(104, 177, 114);
+            font: normal 14pt Andale Mono, monospace;
+        }
+        h1 {
+            color: rgb(255, 255, 255);
+            font: normal 20pt Andale Mono, monospace;
+        }
+        input {
+            font: normal 14pt Andale Mono, monospace;
+            width: 390px;
+            background-color: rgb(142, 196, 132);
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do Carro: <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+
+    </div>
+    <script>
+        
+        function calcular() {
+            var txtv = document.getElementById('txtvel')
+            var res = document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `Sua velocidade atual é de <strong>${vel}Km/h</strong>`
+            if(vel > 60){
+                res.innerHTML += '<p>Sua velocidade excedeu o limite, <strong>MULTADO</strong>.</p>'
+            } else{
+                res.innerHTML += '<p>Sua velocidade não exedeu o limite, Você <strong>não foi multado</strong>.</p>'
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>
